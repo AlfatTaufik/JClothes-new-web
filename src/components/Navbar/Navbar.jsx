@@ -1,7 +1,7 @@
 import React from 'react';
-import MenuLinks from '../../base-data';
+import MenuLinks, { DropdownLinks } from '../../base-data';
 import { IoMdSearch } from 'react-icons/io';
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaCaretDown, FaShoppingCart } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
 import DarkMode from './DarkMode';
 
@@ -25,6 +25,28 @@ const Navbar = () => {
                     </a>
                   </li>
                 ))}
+                {/* Dropdown */}
+                <li className='relative cursor-pointer group '>
+                    <a href="#" className='flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2'>
+                        Quick Links
+                        <FaCaretDown className='group-hover:rotate-180 duration-300'/>
+                    </a>
+                    {/* Links */}
+                    <div className='absolute z-[9999] hidden group-hover:block w-[180px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2
+                    text-black dark:text-white'>
+                        <ul className='space-y-1'>
+                            {
+                                DropdownLinks.map((data, index) => (
+                                    <li key={index}>
+                                        <a href={data.link} className='inline-block p-2 font-semibold text-gray-500 hover:text-primary dark:hover:text-white duration-200 hover:bg-primary/20 w-full rounded-md'>
+                                            {data.name}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </li>
               </ul>
             </div>
           </div>
