@@ -17,7 +17,7 @@ const Navbar = () => {
             </a>
             {/* Menu Items */}
             <div className='hidden lg:block items-center'>
-              <ul className="flex items-center gap-4">
+              <ul className="flex items-center gap-3">
                 {MenuLinks.map((data, index) => (
                   <li key={index}>
                     <a href={data.link} className='inline-block px-4 font-semibold text-gray-500 hover:text-primary dark:hover:text-white duration-200'>

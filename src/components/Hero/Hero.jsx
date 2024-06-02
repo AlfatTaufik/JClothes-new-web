@@ -5,17 +5,18 @@ import Button from "../Shared/Button";
 
 const Hero = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows:false
   };
 
   return (
     <div className="container">
       <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] bgHeroColor flex justify-center items-center">
-        <div className="container pb-8 sm:pb-0">
+        <div className="container pb-8 sm:pb-0 mx-auto">
           <Slider {...settings}>
             {sliderTag.map((data, index) => (
               <div key={data.id}>
@@ -31,11 +32,11 @@ const Hero = () => {
                     </div>
                   </div>
                   {/* image content section */}
-                  <div className="order-1 sm:order-2 relative z-40">
+                  <div className="order-1 sm:order-2 ">
                     <img
                       src={data.img}
                       alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-2xl"
+                      className="w-[300px] sm:w-[450px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-2xl relative z-40 "
                     />
                   </div>
                 </div>
