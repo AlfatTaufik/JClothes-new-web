@@ -13,6 +13,7 @@ const Navbar = () => {
           {/* Logo And Link Label Places */}
           <div className="flex items-center gap-4">
             <a href="#" className='text-primary font-semibold tracking-widest text-2xl sm:text-3xl uppercase'>
+              {/* <img src="src/assets/Jclothes-img.svg" className='w-[30px]' alt="" /> */}
               JClothes
             </a>
             {/* Menu Items */}
