@@ -3,7 +3,7 @@ import Button from "../Shared/Button";
 import {
   Image1,
   Image2,
-  Image3,
+  UrbanSoc,
   Image4,
   Image5,
   Image6,
@@ -78,7 +78,7 @@ const Category = () => {
               </div>
             </div>
             <img
-              src={Image3}
+              src={UrbanSoc}
               alt=""
               className="w-[320px] h-auto absolute top-1/2 right-4 transform -translate-y-1/2 object-contain"
             />

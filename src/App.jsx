@@ -6,18 +6,9 @@ import Category2 from './components/Category/Category2';
 import Service from './components/Services/Service';
 import Banner from './components/Banner/Banner';
 import Products from './components/Products/Products';
-import { Image3 } from '../src/assets/category/import-category';
-
-const Banners = {
-  discount: '30% Discount !',
-  title: "Your Design",
-  date: 'Only in June 2024',
-  image: Image3,
-  title2: 'Your Ideas On T-Shirt',
-  title3: 'Akhir Semester Sale',
-  title4: 'Khusus dibulan ini pembelian T-Shirt plus sablon apapun dapat diskon 30%',
-  BgColor: 'hsl(199, 66%, 46%)'
-};
+import Blog from './components/Blog/Blog';
+import { Banners, Banners2 } from './base-data';
+// import { Image3 } from '../src/assets/category/import-category';
 
 const App = () => {
   console.log('Banners:', Banners); // Debugging
@@ -31,6 +22,8 @@ const App = () => {
       <Service />
       <Banner data={Banners} />
       <Products />
+      <Banner data={Banners2} /> 
+      <Blog />
     </div>
   );
 };
