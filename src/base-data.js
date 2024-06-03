@@ -72,25 +72,10 @@ const sliderTag = [
     }
 ]
 
-const Banners = [
-    {
-        discount: "30%",
-        title: "Your T-Shirt",
-        date: "Only in June 2024",
-        image: Image3,
-        title2: "Your Ideas On T-Shirt",
-        title3: "Akhir Semester Sale",
-        title4: 
-        "Khusus dibulan ini pembelian T-Shirt plus sablon apapun dapat diskon 30%",
-        color: "bg-primary"
-    }
-]
-
 
 // Ekspor default MenuLinks dan ekspor named DropdownLinks
 export default MenuLinks;
 export { 
     DropdownLinks,
     sliderTag,
-    Banners
 };
