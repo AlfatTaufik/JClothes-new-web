@@ -64,6 +64,48 @@ const ProductData = [
     }
 ]
 
+const footerLinks = [
+    {
+      title: "PRODUCER",
+      links: [
+        {
+          name: "Bakaran Project",
+          link: "https://pplg.smkn1purwokerto.sch.id/",
+        },
+      ],
+    },
+    {
+      title: "Personil",
+      links: [
+        {
+          name: "Alfat Taufik Nurhidayat as Frontend Dev",
+          link: "https://instagram.com/alfattaufik?igshid=OGQ5ZDc2ODk2ZA==",
+        },
+        {
+          name: "Ikhsandi Saktiawan as Backend Dev",
+          link: "https://www.instagram.com/siisand/",
+        },
+        {
+          name: "Rubben Mulyo Santoso as Backend Dev",
+          link: "https://www.instagram.com/rubbnms/",
+        }
+      ],
+    },
+    { 
+      title: "Partner",
+      links: [
+        {
+          name: "Jantur Dev",
+          link: "https://github.com/Jantur-dev",
+        },
+        {
+          name: "Bakaran Project",
+          link: "bakaranproject.com"
+        }
+      ],
+    },
+  ];
+
 const Blogs = [
     {
         title: "Done Deal Tshirt",
@@ -204,5 +246,6 @@ export {
     Banners2,
     ProductData,
     ProductsData2,
-    Blogs
+    Blogs,
+    footerLinks
 };

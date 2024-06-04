@@ -7,6 +7,8 @@ import Service from './components/Services/Service';
 import Banner from './components/Banner/Banner';
 import Products from './components/Products/Products';
 import Blog from './components/Blog/Blog';
+import Partner from './components/Partner/Partner';
+import Footer from './components/Footer/Footer';
 import { Banners, Banners2 } from './base-data';
 // import { Image3 } from '../src/assets/category/import-category';
 
@@ -24,6 +26,8 @@ const App = () => {
       <Products />
       <Banner data={Banners2} /> 
       <Blog />
+      <Partner/>
+      <Footer/>
     </div>
   );
 };
