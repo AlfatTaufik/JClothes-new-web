@@ -4,7 +4,7 @@ import Image3 from "../src/assets/hero/cloth.png"
 
 import {UrbanSoc} from "../src/assets/category/import-category"
 import { Tshirt, Hoodie, Mugs, Sweater, Totebag, Jacket,  LongSleeve, pdl } from "./assets/product/import-product"
-import { FaCarSide, FaHeadphonesAlt, FaWallet, FaCheckCircle } from "react-icons/fa"
+
 
 
 const Banners = {
