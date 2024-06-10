@@ -1,10 +1,9 @@
-import React from "react";
 import Slider from "react-slick";
 import { sliderTag } from "../../base-data";
 import Button from "../Shared/Button";
 
 const Hero = () => {
-  var settings = {
+  let settings = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -18,7 +17,7 @@ const Hero = () => {
       <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] bgHeroColor flex justify-center items-center">
         <div className="container pb-8 sm:pb-0 mx-auto">
           <Slider {...settings}>
-            {sliderTag.map((data, index) => (
+            {sliderTag.map((data) => (
               <div key={data.id}>
                 <div className="grid grid-cols-1 sm:grid-cols-2">
                   {/* text content section */}
