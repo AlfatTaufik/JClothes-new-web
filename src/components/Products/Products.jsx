@@ -21,7 +21,7 @@ const Products = () => {
   }, []);
   return (
     <div>
-      <div className='container'>
+      <div className='container' id="product">
         {/* Header */}
         <div className='grid'>
           <Heading title={"Our Products"} subtitle={"Custom Sekarang"} />

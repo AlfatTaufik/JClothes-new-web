@@ -10,6 +10,7 @@ import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Category from "./routes/CategoryById.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/barang/edit/:id",
     element: <EditBarang />,
+  },
+  {
+    path: "/category/:id",
+    element: <Category />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

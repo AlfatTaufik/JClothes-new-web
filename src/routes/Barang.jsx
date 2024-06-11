@@ -76,7 +76,7 @@ const Barang = () => {
                 <td>{items.nama_barang}</td>
                 <td>{items.harga}</td>
                 <td>{items.stok}</td>
-                <td><img src={"http://localhost:8000/assets/img/product/"+items.gambar} width={128} height={128}></img></td>
+                <td><img src={"http://localhost:8000/storage/assets/img/product/"+items.gambar} width={128} height={128}></img></td>
                 <td>{items.keterangan}</td>
                 <td>{items.category_name}</td>
                 <td className="flex gap-4">
