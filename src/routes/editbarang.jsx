@@ -13,6 +13,7 @@ import instance from "../axiosInstance";
 import { useNavigate } from "react-router-dom";
 import NavbarMin from "../components/Navbar/adminnav";
 import { useParams } from "react-router-dom";
+
 const EditBarang = () => {
   const token = localStorage.getItem("token");
 
@@ -41,13 +42,18 @@ const EditBarang = () => {
         "Content-Type": "multipart/form-data",
       };
 
-      await instance.put(`/admin/barang/${id}`, formData, { headers });
+      // Melakukan POST_method=PUT request dengan axios
+      const response = await instance.post(`/admin/barang/${id}`, formData, { headers });
+
+      // Log respons dari server
+      console.log("Response:", response);
+
       console.log("Data berhasil diperbarui");
       navigate("/admin/barang", {
         replace: true,
       });
     } catch (error) {
-      console.error("Gagal memperbarui data", error);
+      console.error("Gagal memperbarui data", error.response ? error.response.data : error.message);
     }
   };
 
@@ -128,6 +134,7 @@ const EditBarang = () => {
               variant='underlined'
               placeholder='Gambar'
               className='mb-10'
+              accept="/image/*"
               onChange={(e) => setGambar(e.target.files[0])}
               type='file'
             />
